@@ -100,7 +100,9 @@ footer{
     padding-right: 5%;
 
 }
-
+.bottun{
+    float: right;
+}
 /*------------------------Darkmode------------------*/
 
 .dark-mode {
