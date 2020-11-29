@@ -100,12 +100,7 @@ footer{
     padding-right: 5%;
 
 }
-.bottun{
-    float: right;
-}
-.deuteranopia {
-    filter: sepia(100%);
-}
+
 /*------------------------Darkmode------------------*/
 
 .dark-mode {
