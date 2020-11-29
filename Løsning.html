@@ -16,7 +16,7 @@
             <img id="deuter" class="logo-img" src="image/logoo.png" alt="logo"  ALT="align box" ALIGN=CENTER>
         </a>
 
-        <nav id="dark1">
+        <nav >
             <ul>
                 <li><a href="index.html">HJEM</a></li>
                 <li><a href="Problemstilling.html">PROBLEMSTILLING</a></li>
@@ -28,10 +28,10 @@
     </div>
 </header>
 <!--=================mainconten==================--->
-<div class="mainContainer" id="dark">
+<div class="mainContainer">
     <div>
         <section>
-            <div id="deu2" class="bottun">
+            <div class="bottun">
                 <a href="https://wenckelarsson.github.io/final-EN/L%C3%B8sning.html"> <img src="image/English%20flag%20button.png" alt="språk" height="35" width="35"></a>
                 <a href="L%C3%B8sning.html"><img src="image/Norsk%20flag%20button.png" alt="språk"  height="35" width="30"></a>
                 <strong>
@@ -39,11 +39,13 @@
                     En / No</strong>
             </div>
             <div>
-               <input type="checkbox" class="checkbox" id="chk" onclick="colorModeSwitch()"/>
+               <input type="checkbox" class="checkbox" id="chk" onclick="colorModeSwitch()" onkeypress="colorModeSwitch()"/>
                 <label class="switch" for="chk">
                     <div class="circle"></div>
-                </label>                
-                <strong><br>Mørk modus</strong>
+                    Dark
+                </label>
+                <title>Dark-mode</title>
+                <lable><br>Dark mode</lable>
                </div>
             <article>
                 <header>
@@ -70,14 +72,14 @@
                     <br>
                     <br>
                 </p>
-                <figure id="dark4" class="smallbox">
+                <figure class="smallbox">
                     <h1>Automatisk-tilkobling</h1>
 
                     <p>Appen sender en melding automatisk
                         <br>til ambulanse, politi, sykehus osv.
                     </p>
                 </figure>
-                <figure id="dark5" class="smallbox">
+                <figure class="smallbox">
                     <h1>SIRENE LYS</h1>
 
                     <p>for å vise signal til <br> andre  sjåførene
@@ -86,14 +88,14 @@
                     </p>
 
                 </figure>
-                <figure id="dark6" class="smallbox">
+                <figure class="smallbox">
                     <h1>ABS-SYSTEM</h1>
 
                     <p>APPEN sender et signal til <br> ABS for å bremse
                     </p>
                     hvis sjåføren får hjerteinfarkt
                 </figure>
-                <figure id="dark7" class="smallbox">
+                <figure class="smallbox">
                     <h1>FINGER-SENSOR</h1>
 
                     <p>En sensor som setter seg opp på styre
@@ -107,7 +109,7 @@
 </div>
 
 <!------------------footer-------------------->
-<footer id="dark3">
+<footer>
     <p>SAFTEY DRIVE | NEW INNOVATION WAY | OSLOMETStudenter | <a style="color: greenyellow" href=image/final.pdf>Kilder</a></p>
     <article style="text-align: center">
         <a href="OmOss.html" style="color:greenyellow"> <p >Contact</p></a>
