@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFETY DRIVE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!--=================body========================-->
+<body>
+  <header>
+      <img src="image/logo3.png" class="logo" alt=logo>
+      <div class="bg-div sticky">
+          <a href="index.html">
+              <img id="deuter" class="logo-img" src="image/logoo.png" alt="logo"  ALT="align box" ALIGN=CENTER>
+          </a>
+
+          <nav id="dark1">
+            <ul>
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="Problemstilling.html">PROBLEMSTILLING</a></li>
+                <li><a href="Løsning.html">LØSNING</a></li>
+                <li><a href="Funksjon.html">FUNKSJON</a></li>
+                <li><a href="OmOss.html">OM OSS</a></li>
+              </ul>
+            </nav>
+        </div>
+  </header>
+<!--=================mainconten==================--->
+<div class="mainContainer" id="dark">
+    <div>
+        <section>
+          <div id="deu2" class="bottun">
+              <a href="https://ciwankurd.github.io/Final-project-EN/Problemstilling.html"> <img src="image/English%20flag%20button.png" alt="språk" height="35" width="35"></a>
+              <a href="Problemstilling.html"><img src="image/Norsk%20flag%20button.png" alt="språk"  height="35" width="30"></a>
+              <strong>
+                  <br>
+                  En / No</strong>
+          </div>
+          <div>
+             <input type="checkbox" class="checkbox" id="chk" onclick="colorModeSwitch()"/>
+              <label class="switch" for="chk">
+                  <div class="circle"></div>
+              </label>
+             </div>
+            <article>
+                <header>
+                    <p class="fontStyle">PROBLEMSTILLING</p>
+                </header>
+
+                 <p class="textStyle">
+
+                Det er mange trafikkulykker som skjer i verden hver dag. Det er
+                mange grunner bak disse trafikkulykkene, som mangel på oppmerksomhet
+                , kjøring i påvirket tilstand, plutselige hjerteinfarkt eller sovne
+                 mens du kjører.
+                    <br>
+                    <br>
+                    Dette betyr at vi må investere kunstig intelligens for å
+                    redusere trafikkulykker i verden og sikre sjåfører under kjøring.
+                    <br><br>
+                    Situasjonen er farligere når en trafikkulykke inntreffer i
+                     områder langt fra trafikk, så død kan oppstå av trivielle grunner
+                      som at føreren trengte førstehjelp.
+
+                    <br><br>
+                    Safety Drive er bilens nødvendige sikkerhetssystem, ettersom systemet bidrar til å redde liv når
+                    bilen utsettes for voldelige ulykker, og dens betydning ligger i å beskytte sjåføren mot
+                     fysiske symptomer, hvorav det viktigste er hjerterotasjon og hjerterytme, og førerens
+                      beskyttelse mot bilulykker.
+                     <br>
+                     <br>
+                 </p>
+                <img src="image/problem.png" alt="problemstilling" width="70%"> <br><br>
+
+            </article>
+        </section>
+    </div>
+</div>
+
+<!------------------footer-------------------->
+  <footer id="dark3">
+      <p>SAFTEY DRIVE | NEW INNOVATION WAY | OSLOMETStudenter | <a style="color: greenyellow" href=image/final.pdf>Kilder</a></p>
+      <article style="text-align: center">
+          <a href="OmOss.html" style="color:greenyellow"> <p >Contact</p></a>
+      </article>
+  </footer>
+  <!--=================Script========================-->
+  <script>
+    function colorModeSwitch () {
+      const mode = localStorage['colorMode']
+      document.body.classList.toggle('dark-mode', mode)
+    }
+
+    const checkbox         = document.querySelector('#chk')
+          checkbox.checked = localStorage['colorMode']
+
+    checkbox.addEventListener('change', () => {
+      localStorage['colorMode'] = checkbox.checked || ""
+      colorModeSwitch()
+    })
+
+    colorModeSwitch()
+  </script>
+
+</body>
+</html>
