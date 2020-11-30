@@ -150,12 +150,12 @@ footer{
 	background-color: lightgray;
 	border-radius: 50%;
 	position: absolute;
-	top: 2px;
-	left: 2px;
 	height: 22px;
 	width: 22px;
+	top: 2px;
+	left: 2px;
 	transform: translateX(0px);
-	transition: transform 0.2s linear;
+	transition: transform 0.3s linear;
 }
 
 .checkbox:checked + .switch .circle {
@@ -163,7 +163,7 @@ footer{
 }
 .checkbox:checked + .switch {
   background-color: white;
-  transition: background 0.2s linear;
+  transition: background 0.3s linear;
 }
 
 /*--------------------------------REPOSNIVE---------------------*/
