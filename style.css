@@ -140,7 +140,6 @@ footer{
 .switch {
 	background-color: #292C35;
 	border-radius: 50px;
-	display: flex;
 	padding: 5px;
 	position: relative;
 	height: 26px;
